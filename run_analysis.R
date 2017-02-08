@@ -37,5 +37,7 @@ bindedtable <- rbind(a, b)
 
 meanandstd <- bindedtable[grep("mean|std|Activities|Subjects", names(bindedtable))] 
 
+write.table(second_data, file="~/UCI HAR Dataset/G&C_Assig.txt",row.name=FALSE)
+
 
 second_data <- aggregate(. ~ Activities + Subjects, data = meanandstd, FUN = 'mean')
