@@ -35,7 +35,7 @@ b$Activities[b$Activities == "1"] <- "WALKING"; b$Activities[b$Activities == "2"
 bindedtable <- rbind(a, b)
 
 
-meanandstd <- bindedtable[grep("mean|std|Activity|Subjects", names(bindedtable))] 
+meanandstd <- bindedtable[grep("mean|std|Activities|Subjects", names(bindedtable))] 
 
 
 second_data <- aggregate(. ~ Activities + Subjects, data = meanandstd, FUN = 'mean')
