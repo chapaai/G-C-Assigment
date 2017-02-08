@@ -1,10 +1,11 @@
 First Column: Activities - Activity Names: Walking, Standing, Sitting, Laying, Walking Downstairs, Walking Upstairs
-Second and the rest Columns: The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+Second Column: Subjects - People who tested with wearable tech. Values from 1 to 30. Each one is a different person.
 
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+Third Column: Mean of "tBodyAcc-mean()-X" values. Grouped by Activities and Subjects
 
-These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-     
+Fourth and rest: Mean of the original values. Grouped by Activities and Subjects. 
+
+I dont write one by one all the columns. They are all mean of the original values grouped by activities and subjects. 
+
+For example: When we look at "tBodyAcc-mean()-X", It shows me the 5st(or other) person's mean "tBodyAcc-mean()-X" value. And this is for different activities. For exapmle in first data we had 30 "tBodyAcc-mean()-X" values for a person and for every single activity. Then we took the mean of those values and we also took the mean of the std values also. 
